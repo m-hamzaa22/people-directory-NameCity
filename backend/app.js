@@ -58,7 +58,7 @@ const corsOptions = {
 app.use(cors(corsOptions));  // Apply CORS configuration globally
 
 // MongoDB Connection
-mongoose.connect('mongodb://20.20.20.59:28017/people-db', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://20.20.20.59:27017/people-db', { useNewUrlParser: true, useUnifiedTopology: true }) // Change the IP:Port Here
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('MongoDB connection error:', err));
 
